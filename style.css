@@ -683,6 +683,10 @@ header .icons a:hover{
 
 
 /* SHARE-GIF::START */
+.share-section{
+  margin-bottom: 50px;
+}
+
 .inline-elements{
   display: flex;
   align-items: center;
@@ -690,8 +694,9 @@ header .icons a:hover{
 
 #share-img{
   width: 70px;  
-  height: auto;
+  height: 60px;
   pointer-events: none;
+  margin: 0 0 0 30px;
 }
 
 .share-section h1{
@@ -711,8 +716,8 @@ header .icons a:hover{
   flex-direction: column;
   align-items: flex-center;
   justify-content: center;
-  padding-left: 5px;
-  margin-top: 40px;
+  padding-left: 10px;
+  margin-top: 10px;
 }
 
 .text-content h1{
@@ -1088,6 +1093,14 @@ header .icons a:hover{
     top: 140px;
     left: -60px;
   }
+
+  #share-img{
+    margin: 40px 0 0 30px;
+  }
+
+  .text-content{
+    margin-top: 50px;
+  }
 }
 
 @media(max-width: 961px){
@@ -1261,4 +1274,19 @@ header .icons a:hover{
     right: 80px;
   }
 
+  #share-img{
+    margin: 20px 0 0 30px;
+  }
+
+  .text-content{
+    margin-top: 40px;
+  }
+
+  .share-section h1{
+  font-size: 12px;
+  }
+
+  .share-section p{
+  font-size: 10px;
+  }
   }
