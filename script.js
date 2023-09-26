@@ -1,15 +1,14 @@
 // todo: make the header sticky only in higher resolutions
 
 // LOGIN-WINDOW::START 
-const userIcon = document.getElementById('hd-login-button');
-const userIconMobile = document.getElementById('account-mobile');
+const loginButton = document.getElementById('login-button');
 const loginWindow = document.getElementById('login-window');
 const closeButton = document.getElementById('login-close-button');
 const loginOverlay = document.getElementById('login-overlay');
 const scrollArrow = document.getElementById('scrollToTop');
 
 // Icon for higher resolutions
-userIcon.addEventListener('click', () => {
+loginButton.addEventListener('click', () => {
   loginWindow.style.display = 'flex';
   loginOverlay.classList.add('active');
   scrollArrow.style.display = 'none';
@@ -178,44 +177,4 @@ var swiper = new Swiper('.trending-slider', {
     },
   }
 });
-
-var swiper = new Swiper('.movies-slider', {
-  loop: true,
-  // autoplay: {
-  //     delay: 4500,
-  //     disableOnInteraction: false
-  // },
-  slidesPerView: 8,
-  spaceBetween: 0,
-  centeredSlides: false, 
-  /* pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-  }, */
-  navigation: {
-      nextEl: "#movies-button-next",
-      prevEl: "#movies-button-prev",
-  }
-});
-
-var swiper = new Swiper('.tv-series-slider', {
-    loop: true,
-    // autoplay: {
-    //     delay: 4500,
-    //     disableOnInteraction: false
-    // },
-    slidesPerView: 8,
-    spaceBetween: 0,
-    centeredSlides: false, 
-    /* pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    }, */
-    navigation: {
-        nextEl: "#tv-button-next",
-        prevEl: "#tv-button-prev",
-    }
-});
 // IMAGE-SLIDERS::END
-
-

@@ -72,7 +72,7 @@ html{
   margin-left: 5px;
 }
 
-#hd-login-button{
+#login-button{
   border-radius: 10%;
   position: absolute;
   right: 10px;
@@ -517,7 +517,7 @@ header .icons a:hover{
   color: var(--golden-rod);
 }
 
-.login-content #login-button{
+.login-content #login-submit-button{
   margin-top: 10px;
   cursor: pointer;
 }
@@ -1251,7 +1251,7 @@ header .icons a:hover{
     font-size: 10px;
   }
 
-  #hd-login-button{
+  #login-button{
     font-size: 10px;
   }
 
