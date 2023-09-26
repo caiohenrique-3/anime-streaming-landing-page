@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming Website</title>
+    
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" 
+    href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER::START -->
+    <header id="main-header">
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+      </div>  
+
+      <div class="overlay" id="menu-overlay"></div>
+      <div class="side-menu" id="side-menu">
+        <button class="btn" id="menu-close-button"><i class="fa-solid fa-angle-left"></i>Close menu</button>
+
+        <div class="side-menu-icons-container" id="side-menu-icons">
+          <div class="container">
+            <i class="fa fa-users" aria-hidden="true" title="Watch with friends"></i>
+            <p>Watch2gether</p>
+          </div>
+          <div class="container">
+            <i class="fa fa-random" aria-hidden="true" title="Watch random anime"></i>
+            <p>Random</p> 
+          </div>
+        </div>
+        
+        <button class="btn" id="community-button"><i class="fa fa-comments"></i>Community</button>
+
+        <div class="links">
+          <p>Home</p>
+          <p>Subbed Anime</p>
+          <p>Dubbed Anime</p>
+          <p>Most Popular</p>
+          <p>Movies</p>
+          <p>TV Series</p>
+          <p>OVAs</p>
+          <p>ONAs</p>
+          <p>Specials</p>
+          <p>Events</p>
+        </div>
+        <div class="genre-section">
+          <h1>Search by Genres</h1>
+          <div class="genre-column">
+            <p id="action">Action</p>
+            <p id="adventure">Adventure</p>
+            <p id="martial-arts">Martial Arts</p>
+            <p id="comedy">Comedy</p>
+            <p id="suspense">Suspense</p>
+            <p id="demons">Demons</p>
+            <p id="drama">Drama</p>
+            <p id="ecchi">Ecchi</p>
+            <p id="fantasy">Fantasy</p>
+            <p id="horror">Horror</p>
+          </div>
+
+          <div class="genre-column">
+            <p id="mecha">Mecha</p>
+            <p id="slice-of-life">Slice of Life</p>
+            <p id="isekai">Isekai</p>
+            <p id="idol">Idol</p>
+            <p id="psychological">Psychological</p>
+            <p id="romance">Romance</p>
+            <p id="sci-fi">Sci-Fi</p>
+            <p id="supernatural">Supernatural</p>
+            <p id="mystery">Mystery</p>
+            <p id="magic">Magic</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="logo"><i class="fa-solid fa-mountain-sun"></i> Yama</a>
+      
+      <div class="search-container">
+        <input type="search" placeholder="Search anime...">  
+        <span class="search-addon">
+          <i class="fas fa-search"></i>
+          <a class="filter-btn">Filter</a>
+        </span>
+      </div>
+
+      <div class="social-media-text">
+        <p>Join<br>now</p>
+      </div>
+        <div class="icons" id="social-media-icons">
+          <i class="fas fa-search" id="search-icon"></i>
+          <i class="fa fa-discord" id="discord-icon"></i>
+          <i class="fa fa-telegram" id="telegram-icon"></i>
+          <i class="fa fa-reddit" id="reddit-icon"></i>
+          <i class="fa fa-twitter" id="twitter-icon"></i>
+        </div>    
+
+      <div class="icons-container" id="c1">
+        <i class="fa fa-users" aria-hidden="true" title="Watch with friends"></i>
+        <p>Watch2gether</p>
+      </div>
+
+      <div class="icons-container" id="c2">
+        <i class="fa fa-random" aria-hidden="true" title="Watch random anime"></i>
+        <p>Random</p>
+      </div>
+
+      <div class="icons-container" id="c3">
+        <i class="fa fa-comments" aria-hidden="true" title="Chat about your favorite shows"></i>
+        <p>Community</p>
+      </div>
+
+      <button class="btn" id="hd-login-button">Login</button>
+    </header>
+    <!-- HEADER::END -->
+
+    <!-- LOGIN-WINDOW::START -->
+    <div class="overlay" id="login-overlay"></div>
+    <div class="login-window" id="login-window">
+      <div class="login-content">
+        <h2>Welcome Back!</h2>
+        <form id="display-form">
+          <label for="email" id="lb-email">email address</label><br>
+          <input type="email" id="email" name="email" autocomplete="off"><br>
+          <label for="password" id="lb-password">password</label><br>
+          <input type="password" id="password" name="password"><br>
+          <input type="checkbox" id="remember-checkbox" name="remember-checkbox"> 
+          <label for="remember-checkbox">remember me</label>
+          <a id="forgot-password">forgot password?</a><br>
+          <input type="submit" value="login" id="login-button"><br>
+          <label>don't have an account? </label><a id="register-button"> register</a><br>
+        </form>
+        <i id="login-close-button" class="fa-solid fa-circle-xmark"></i>
+      </div>
+    </div>
+    <!-- LOGIN-WINDOW::END -->
+
+    <!-- HOME::START -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="content">
+                            <h1>#1 Spotlight</h1>
+                            <h3>Attack On Titan</h3>
+                            <p> the story follows eren yeager and his friends mikasa and armin as they 
+                                join the military to fight against the titans and uncover the truth
+                                about their mysterious origin and the secrets behind the walled city
+                                they live in.</p>
+                            <a href="#" class="btn"><i class="fa-solid fa-circle-play"></i>watch now</a>                        
+                            <a href="#" class="detail-btn">detail<i class="fas fa-angle-right m1-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-container" id="aot-slide"></div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="box second">
+                        <div class="content">
+                            <h1>#2 Spotlight</h1>
+                            <h3>fullmetal alchemist: brotherhood</h3>
+                            <p> two brothers, edward and alphonse elric, who use alchemy to search for the philosopher's stone
+                                to restore their bodies after a failed alchemical experiment.
+                                their journey unveils a complex world of political intrigue, moral dilemmas, and dark secrets.</p>
+                            <a href="#" class="btn"><i class="fa-solid fa-circle-play"></i>watch now</a>                        
+                            <a href="#" class="detail-btn">detail<i class="fas fa-angle-right m1-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-container" id="fma-slide"></div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box third">
+                        <div class="content">
+                            <h1>#3 Spotlight</h1>
+                            <h3>Death Note</h3>
+                            <p> the story follows follows a high school student named light yagami who 
+                                discovers a supernatural notebook
+                                that allows him to kill anyone by writing 
+                                their name in it. </p>
+                            <a href="#" class="btn"><i class="fa-solid fa-circle-play"></i>watch now</a>                        
+                            <a href="#" class="detail-btn">detail<i class="fas fa-angle-right m1-2"></i></a>
+                        </div>
+                    </div>
+                <div class="image-container" id="death-note-slide"></div>
+</div>
+
+                <div class="swiper-slide">
+                    <div class="box fourth">
+                        <div class="content">
+                            <h1>#4 Spotlight</h1>
+                            <h3>One Punch Man</h3>
+                            <p> portrays the life of Saitama, a hero who can defeat any opponent with a single punch.
+                                Bored by his own overwhelming strength, Saitama seeks a challenging fight
+                                while facing a world filled with increasingly bizarre and powerful villains.</p>
+                            <a href="#" class="btn"><i class="fa-solid fa-circle-play"></i>Watch Now</a>                        
+                            <a href="#" class="detail-btn">Detail<i class="fas fa-angle-right m1-2"></i></a>
+                        </div>
+                    </div>
+                <div class="image-container" id="opm-slide"></div>
+                </div>
+
+            </div>        
+        <div class="swiper-pagination"></div>
+        </div>
+      
+    </section>    
+    <!-- HOME::END -->
+
+    <!-- MOST-POPULAR::START -->
+    <section class="anime-box" id="most-popular">
+        <h1 class="heading">Most Popular</h1>
+
+      <div class="swiper-navigation-popular">
+        <div class="swiper-button-next" id="popular-button-next"></div>
+        <div class="swiper-button-prev" id="popular-button-prev"></div>
+      </div>
+
+        <div class="swiper trending-slider">
+            <div class="swiper-wrapper">
+               
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/naruto.jpg) no-repeat;">
+                    </div>
+                    <div class="content">
+                        <h3>Naruto</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/kimetsu-no-yaiba.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Kimetsu no Yaiba</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/sword-art-online.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Sword Art Online</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/tokyo-ghoul.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Tokyo Ghoul</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/hunterxhunter2011.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Hunter x Hunter (2011)</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/steins-gate.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Steins;Gate</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/boku-no-hero-academia.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Boku no Hero Academia</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/jujutsu-kaisen.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Jujutsu Kaisen</h3>
+                    </div>
+                </div>
+             
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/one-piece.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>One Piece</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/re-zero.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Re:Zero kara Hajimeru Isekai Seikatsu</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/noragami.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Noragami</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/akame-ga-kill.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Akame ga Kill!</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/nanatsu-no-taizai.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Nanatsu no Taizai</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/mirai-nikki.png) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Mirai Nikki</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/bleach.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Bleach</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(imgs/death-parade.jpg) no-repeat;"></div>
+                    <div class="content">
+                        <h3>Death Parade</h3>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+        </section>
+    <!-- MOST-POPULAR::END -->
+
+   <!-- SHARE-GIF::START -->
+    <section class="share-section">      
+    <div class="inline-elements">
+        <!-- <iframe id="share-img" src="https://giphy.com/embed/ir5iL7AFTQgr6" class="giphy-embed"></iframe> -->
+        <div class="text-content">
+        <h1>Share Yama</h1>
+        <p>to your friends!</p>    
+    </div>
+    </section>
+    <!-- SHARE-GIF::END -->
+
+    <!-- MAIN-CATEGORIES::START -->
+    <section class="main-categories">
+      <div id="tv-series" class="category">
+        <h1>TV Series</h1> 
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/gintama.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Gintama</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">51 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/monster.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Monster</p>
+            <p id="show-info-1">2005</p>
+            <p id="show-info-2">74 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/bocchi-the-rock.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Bocchi the Rock!</p>
+            <p id="show-info-1">2022</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/oshi-no-ko.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Oshi no Ko</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">11 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/vinland-saga.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Vinland Saga</p>
+            <p id="show-info-1">2019</p>
+            <p id="show-info-2">24 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/mob-psycho-100.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Mob Psycho 100</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/hajime-no-ippo.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Hajime no Ippo</p>
+            <p id="show-info-1">2002</p>
+            <p id="show-info-2">75 EPS</p>
+          </div>
+        </div>
+
+        <div class="show-additional">
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/cowboy-bebop.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Cowboy Bebop</p>
+            <p id="show-info-1">1999</p>
+            <p id="show-info-2">26 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/made-in-abyss.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Made in Abyss</p>
+            <p id="show-info-1">2017</p>
+            <p id="show-info-2">13 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/saiki-kusuo-no-psi-nan.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The Disastrous Life of Saiki K.</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">120 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/kaguya-sama-love-is-war.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Kaguya-sama: Love is War</p>
+            <p id="show-info-1">2019</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/Mushi-shi.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Mushishi</p>
+            <p id="show-info-1">2006</p>
+            <p id="show-info-2">26 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/haikyuu.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Haikyuu!!</p>
+            <p id="show-info-1">2014</p>
+            <p id="show-info-2">25 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/guren-lagann.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Gurren Lagann</p>
+            <p id="show-info-1">2007</p>
+            <p id="show-info-2">27 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/Berserk.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Berserk</p>
+            <p id="show-info-1">1998</p>
+            <p id="show-info-2">25 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/fruits-basket-final-season.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Fruits Basket: The Final Season</p>
+            <p id="show-info-1">2021</p>
+            <p id="show-info-2">13 EPS</p>
+          </div>
+        </div>
+        </div>
+
+        <button class="view-more view-more-1">+ View More</button>
+
+        <!-- <p><img src="imgs/monster.jpg" alt="">Monster</p>
+        <p><img src="imgs/bocchi-the-rock.jpg" alt="">Bocchi the Rock!</p>
+        <p><img src="imgs/oshi-no-ko.jpg" alt="">Oshi no Ko</p>
+        <p><img src="imgs/vinland-saga.jpg" alt="">Vinland Saga</p>
+        <p><img src="imgs/mob-psycho-100.jpg" alt="">Mob Psycho 100</p>
+        <p><img src="imgs/hajime-no-ippo.jpg" alt="">Hajime no Ippo</p>
+        <p><img src="imgs/cowboy-bebop.jpg" alt="">Cowboy Bebop</p>
+        <p><img src="imgs/.jpg" alt="">Made in Abyss</p>
+        <p><img src="imgs/saiki-kusuo-no-psi-nan.jpg" alt="">The Disastrous Life of Saiki K.</p>
+        <p><img src="imgs/kaguya-sama-love-is-war.jpg" alt="">Kaguya-sama: Love is War</p>
+        <p><img src="imgs/chainsaw-man.jpg" alt="">Chainsaw Man</p>
+        <p><img src="imgs/Mushi-shi.jpg" alt="">Mushi-shi</p>
+        <p><img src="imgs/haikyuu.jpg" alt="">Haikyuu!!</p>
+        <p><img src="imgs/guren-lagann.jpg" alt="">Gurren Lagann</p>
+        <p><img src="imgs/Berserk.jpg" alt="">Berserk</p> -->
+      </div>
+
+      <div id="movies" class="category">
+        <h1>Movies</h1> 
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/koe-no-katachi.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>A Silent Voice</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/kimi-no-nawa.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Your Name</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/spirited-away.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Spirited Away</p>
+            <p id="show-info-1">2001</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/princess-mononoke.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Princess Mononoke</p>
+            <p id="show-info-1">1997</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-end-of-evangelion.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The End of Evangelion</p>
+            <p id="show-info-1">1997</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/k-on-movie.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>K-On! The Movie</p>
+            <p id="show-info-1">2011</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/gintama-the-very-final.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Gintama: The Very Final</p>
+            <p id="show-info-1">2021</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show-additional">
+             <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/violet-evergarden-the-movie.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Violet Evergarden: The Movie</p>
+            <p id="show-info-1">2020</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-first-slam-dunk.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The First Slam Dunk</p>
+            <p id="show-info-1">2022</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/kizumonogatari-3.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Kizumonogatari Part 3: Cold-Blooded</p>
+            <p id="show-info-1">2017</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/howls-moving-castle.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Howl's Moving Castle</p>
+            <p id="show-info-1">2004</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/seishun-buta-yarou.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Rascal Does Not Dream of a Dreaming Girl: The Movie</p>
+            <p id="show-info-1">2019</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-disappearance-of-haruhi-suzumiya.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The Disappearance of Haruhi Suzumiya</p>
+            <p id="show-info-1">2010</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/wolf-children.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Wolf Children</p>
+            <p id="show-info-1">2012</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/revue-starlight.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Revue Starlight: The Movie</p>
+            <p id="show-info-1">2021</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/grave-of-the-fireflies.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Grave of the Fireflies</p>
+            <p id="show-info-1">1988</p>
+            <p id="show-info-2">CC & DUB</p>
+          </div>
+        </div>
+        </div>
+
+        <button class="view-more view-more-2">+ View More</button>
+
+
+        <!-- <p><img src="imgs/koe-no-katachi.jpg" alt="">A Silent Voice</p>
+        <p><img src="imgs/kimi-no-nawa.jpg" alt="">Your Name</p>
+        <p><img src="imgs/spirited-away.jpg" alt="">Spirited Away</p>
+        <p><img src="imgs/princess-mononoke.jpg" alt="">Princess Mononoke</p>
+        <p><img src="imgs/the-end-of-evangelion.jpg" alt="">The End of Evangelion</p>
+        <p><img src="imgs/k-on-movie.jpg" alt="">K-On! The Movie</p>
+        <p><img src="imgs/gintama-the-very-final.jpg" alt="">Gintama: The Very Final</p>
+        <p><img src="imgs/violet-evergarden-the-movie.jpg" alt="">Violet Evergarden: The Movie</p>
+        <p><img src="imgs/the-first-slam-dunk.jpg" alt="">The First Slam Dunk</p>
+        <p><img src="imgs/kizumonogatari-3.jpg" alt="">Kizumonogatari Part 3: Cold Blooded</p>
+        <p><img src="imgs/howls-moving-castle.jpg" alt="">Howl's Moving Castle</p>
+        <p><img src="imgs/seishun-buta-yarou.jpg" alt="">Rascal Does Not Dream of a Dreaming Girl: The Movie</p>
+        <p><img src="imgs/the-disappearance-of-haruhi-suzumiya.jpg" alt="">The Dissapearance of Haruhi Suzumiya</p>
+        <p><img src="imgs/wolf-children.jpg" alt="">Wolf Children</p>
+        <p><img src="imgs/revue-starlight.jpg" alt="">Revue Starlight: The Movie</p>
+        <p><img src="imgs/grave-of-the-fireflies.jpg" alt="">Grave of the Fireflies</p> -->
+      </div>
+
+      <div id="top-airing" class="category">
+        <h1>Top Airing</h1> 
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/shingeki-no-kyojin-final-season.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Attack on Titan: The Final Season</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">2 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/bleach-thousand-year-blood-war.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Bleach: Thousand-Year Blood War</p>
+            <p id="show-info-1">2022</p>
+            <p id="show-info-2">13 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/jujutsu-kaisen-season-2.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Jujutsu Kaisen Season 2</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">23 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/bungou-stray-dogs-s5.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Bungou Stray Dogs 5</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">11 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/mushoku-tensei-s2.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Mushoku Tensei: Jobless Reincarnation Season 2</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/detective-conan.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Case Closed</p>
+            <p id="show-info-1">1996</p>
+            <p id="show-info-2">1075+ EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/zom-100-bucket-list-of-dead.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Zom 100: Bucket List of the Dead</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show-additional">
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/undead-girl-murder-farce.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Undead Murder Farce</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">13 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/crayon-shin-chan.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Shin Chan</p>
+            <p id="show-info-1">1992</p>
+            <p id="show-info-2">1219+ EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/sugar-apple-fairy-tale-p2.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Sugar Apple Fairy Tale Part 2</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/rurouni-kenshin.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Rurouni Kenshin: Meiji Kenkaku Romantan</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">24 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/hirogaru-sky-precure.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Soaring Sky! Pretty Cure</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">19 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/shinigami-bocchan-to-kuro-maid-2nd-season.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The Duke of Death and His Maid</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/doraemon.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Doraemon</p>
+            <p id="show-info-1">1979</p>
+            <p id="show-info-2">1787 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/fate-grand-order.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Fate/Grand Order</p>
+            <p id="show-info-1">2014</p>
+            <p id="show-info-2">21 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/pokemon-2023.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Pokémon Horizons: The Series</p>
+            <p id="show-info-1">2023</p>
+            <p id="show-info-2">24 EPS</p>
+          </div>
+        </div>
+        </div>
+
+        <button class="view-more view-more-3">+ View More</button>
+
+
+        <!-- <p><img src="imgs/shingeki-no-kyojin-final-season.jpg" alt="">Attack on Titan: The Final Season</p>
+        <p><img src="imgs/bleach-thousand-year-blood-war.jpg" alt="">Bleach: Thousand-Year Blood War</p>
+        <p><img src="imgs/jujutsu-kaisen-season-2.jpg" alt="">Jujutsu Kaisen Season 2</p>
+        <p><img src="imgs/bungou-stray-dogs-s5.jpg" alt="">Bungou Stray Dogs 5</p>
+        <p><img src="imgs/mushoku-tensei-s2.jpg" alt="">Mushoku Tensei: Jobless Reincarnation Season 2</p>
+        <p><img src="imgs/detective-conan.jpg" alt="">Case Closed</p>
+        <p><img src="imgs/zom-100-bucket-list-of-dead.jpg" alt="">Zom 100: Bucket List of the Dead</p>
+        <p><img src="imgs/undead-girl-murder-farce.jpg" alt="">Undead Murder Farce</p>
+        <p><img src="imgs/crayon-shin-chan.jpg" alt="">Shin Chan</p>
+        <p><img src="imgs/sugar-apple-fairy-tale-p2.jpg" alt="">Sugar Apple Fairy Tale Part 2</p>
+        <p><img src="imgs/rurouni-kenshin.jpg" alt="">Rurouni Kenshin: Meiji Kenkaku Romantan</p>
+        <p><img src="imgs/hirogaru-sky-precure.jpg" alt="">Soaring Sky! Pretty Cure</p>
+        <p><img src="imgs/shinigami-bocchan-to-kuro-maid-2nd-season.jpg" alt="">The Duke of Death and His Maid Season 2</p>
+        <p><img src="imgs/doraemon.jpg" alt="">Doraemon</p>
+        <p><img src="imgs/fate-grand-order.jpg" alt="">Fate/Grand Order</p>
+        <p><img src="imgs/pokemon-2023.jpg" alt="">Pokémon Horizons: The Series</p> -->
+      </div>
+
+      <div id="completed" class="category">
+        <h1>Completed Anime</h1> 
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-idolmaster.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The iDOLM@STER</p>
+            <p id="show-info-1">2011</p>
+            <p id="show-info-2">25 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-perfect-insider.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The Perfect Insider</p>
+            <p id="show-info-1">2015</p>
+            <p id="show-info-2">11 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/youkai-watch.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Yo-kai Watch</p>
+            <p id="show-info-1">2014</p>
+            <p id="show-info-2">214 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-promised-neverland.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The Promised Neverland</p>
+            <p id="show-info-1">2019</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-god-of-highschool.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The God of High School</p>
+            <p id="show-info-1">2020</p>
+            <p id="show-info-2">13 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/unlimited-psychic-squad.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Unlimited Psychic Squad</p>
+            <p id="show-info-1">2013</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/handa-kun.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Handa-kun</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show-additional">
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/sakamoto-desu-ga.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Sakamoto desu ga?</p>
+            <p id="show-info-1">2016</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/the-helpful-fox-senku-san.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>The Helpful Fox Senko-san</p>
+            <p id="show-info-1">2019</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/astro-boy.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Astro Boy</p>
+            <p id="show-info-1">2003</p>
+            <p id="show-info-2">50 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/dragon-ball-z.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Dragon Ball Z</p>
+            <p id="show-info-1">1989</p>
+            <p id="show-info-2">291 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/digimon-frontier.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Digimon Frontier</p>
+            <p id="show-info-1">2002</p>
+            <p id="show-info-2">50 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/overlord.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Overlord</p>
+            <p id="show-info-1">2015</p>
+            <p id="show-info-2">12 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/tokyo-revengers.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Tokyo Revengers</p>
+            <p id="show-info-1">2021</p>
+            <p id="show-info-2">24 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/red-baron.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Red Baron</p>
+            <p id="show-info-1">1994</p>
+            <p id="show-info-2">49 EPS</p>
+          </div>
+        </div>
+
+        <div class="show">
+          <div class="show-image-container">
+            <img src="imgs/kuroko-no-basket.jpg" alt="">
+            <div class="show-image-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="text-info">
+            <p>Kuroko's Basketball</p>
+            <p id="show-info-1">2012</p>
+            <p id="show-info-2">25 EPS</p>
+          </div>
+        </div>
+        </div>
+
+        <button class="view-more view-more-4">+ View More</button>
+
+        <!-- <p><img src="imgs/the-idolmaster.jpg" alt="">The iDOLM@STER</p>
+        <p><img src="imgs/the-perfect-insider.jpg" alt="">The Perfect Insider</p>
+        <p><img src="imgs/youkai-watch.jpg" alt="">Yo-kai Watch</p>
+        <p><img src="imgs/the-promised-neverland.jpg" alt="">The Promised Neverland</p>
+        <p><img src="imgs/the-god-of-highschool.jpg" alt="">The God of High School</p>
+        <p><img src="imgs/unlimited-psychic-squad.jpg" alt="">Unlimited Psychic Squad</p>
+        <p><img src="imgs/handa-kun.jpg" alt="">Handa-kun</p>
+        <p><img src="imgs/sakamoto-desu-ga.jpg" alt="">Sakamoto desu ga?</p>
+        <p><img src="imgs/the-helpful-fox-senku-san.jpg" alt="">The Helpful Fox Senko-san</p>
+        <p><img src="imgs/astro-boy.jpg" alt="">Astro Boy (2003)</p>
+        <p><img src="imgs/dragon-ball-z.jpg" alt="">Dragon Ball Z</p>
+        <p><img src="imgs/digimon-frontier.jpg" alt="">Digimon Frontier</p>
+        <p><img src="imgs/overlord.jpg" alt="">Overlord</p>
+        <p><img src="imgs/tokyo-revengers.jpg" alt="">Tokyo Revengers</p>
+        <p><img src="imgs/red-baron.jpg" alt="">Red Baron</p>
+        <p><img src="imgs/kuroko-no-basket.jpg" alt="">Kuroko's Basketball</p> -->
+      </div>
+    </section>
+    <!-- MAIN-CATEGORIES::END-->
+
+        <button id="scrollToTop" title="Go to top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <!-- Including Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My own .js file -->
+    <script src="script.js"></script>
+</body>
+</html>
