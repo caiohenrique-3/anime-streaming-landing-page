@@ -129,8 +129,10 @@ html{
   padding: 8px 12px;
 }
 
-.fas.fa-angle-right.m1-2{
+.fa.fa-angle-right{
   margin-left: 5px;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 #login-button{
@@ -165,7 +167,6 @@ header{
 #menu-bars{
   font-size: 25px;
   padding-right: 20px;
-  font-weight: bolder;
 }
 
 #menu-overlay{
@@ -203,6 +204,11 @@ header{
   font-size: 14px;
   margin-top: 10px;
   margin-left: 5px;
+}
+
+.fa.fa-angle-left{
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 .side-menu-icons-container{
@@ -402,7 +408,7 @@ header input{
   font-weight: bolder;
 }
 
-.search-container .fas.fa-search{
+.search-container .fa.fa-search{
   color: var(--black);
   cursor: pointer;
   padding-right: 10px;
