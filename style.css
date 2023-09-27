@@ -797,6 +797,10 @@ header .icons a:hover{
   background-color: var(--golden-rod);
 }
 
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+  z-index: 0 !important;
+}
+
 /* HOME::END */
 
 /* SHARE-GIF::START */
