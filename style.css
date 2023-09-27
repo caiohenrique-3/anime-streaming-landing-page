@@ -2,82 +2,107 @@
 
 /* poppins-200 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  src: url('fonts/poppins-v20-latin-200.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('fonts/poppins-v20-latin-200.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("fonts/poppins-v20-latin-200.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("fonts/poppins-v20-latin-200.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* poppins-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url('fonts/poppins-v20-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('fonts/poppins-v20-latin-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("fonts/poppins-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("fonts/poppins-v20-latin-300.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* poppins-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('fonts/poppins-v20-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("fonts/poppins-v20-latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* poppins-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url('fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('fonts/poppins-v20-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("fonts/poppins-v20-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("fonts/poppins-v20-latin-500.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url('fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('fonts/poppins-v20-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("fonts/poppins-v20-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("fonts/poppins-v20-latin-600.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* poppins-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url('fonts/poppins-v20-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('fonts/poppins-v20-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src:
+    url("fonts/poppins-v20-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("fonts/poppins-v20-latin-700.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
+
 /* FONTS::END*/
 
 /* BASE::START */
-:root{
-  --red: #E50914;
+:root {
+  --red: #e50914;
   --yellow: #fffb00;
   --black: #000000;
   --blue: #022b8d;
   --light-color: #181818;
-  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-  --rich-black: #131B23;
-  --platinum: #E6E6E9;
-  --taupe-gray: #9999A1;
-  --coffee: #81523F;
-  --golden-rod: #D5A021;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --rich-black: #131b23;
+  --platinum: #e6e6e9;
+  --taupe-gray: #9999a1;
+  --coffee: #81523f;
+  --golden-rod: #d5a021;
 }
 
-*{
-  font-family: 'Poppins', sans-serif;   
+* {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -85,41 +110,42 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 5.5rem;
   background-color: var(--light-color);
 }
 
-.heading{
+.heading {
   text-align: left;
   color: var(--golden-rod);
   margin-bottom: 3rem;
   font-size: 3rem;
   display: flex;
 }
+
 /* BASE::END*/
 
 /* BUTTONS::START */
-.btn{
+.btn {
   margin-top: 1rem;
   display: inline-block;
   font-size: 12px;
-  color: black; 
+  color: black;
   background-color: var(--golden-rod);
   border-radius: 30px;
   cursor: pointer;
   padding: 8px 18px;
 }
 
-.detail-btn{
+.detail-btn {
   display: inline-block;
   font-size: 12px;
-  color: #fff; 
+  color: #fff;
   background-color: var(--taupe-gray);
   border-radius: 30px;
   cursor: pointer;
@@ -129,23 +155,24 @@ html{
   padding: 8px 12px;
 }
 
-.fa.fa-angle-right{
+.fa.fa-angle-right {
   margin-left: 5px;
   font-size: 15px;
   font-weight: bolder;
 }
 
-#login-button{
+#login-button {
   border-radius: 10%;
   position: absolute;
   right: 10px;
   top: 5;
   margin-top: 0;
 }
+
 /* BUTTONS::END */
 
 /* HEADER::START */
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -157,19 +184,19 @@ header{
   background-color: transparent;
 }
 
-.menu-active{
+.menu-active {
   position: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-#menu-bars{
+#menu-bars {
   font-size: 25px;
   padding-right: 20px;
 }
 
-#menu-overlay{
+#menu-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -181,7 +208,7 @@ header{
   z-index: 100000;
 }
 
-.side-menu{
+.side-menu {
   position: fixed;
   top: 0;
   left: -250px;
@@ -193,11 +220,11 @@ header{
   z-index: 1000000;
 }
 
-.side-menu.show{
+.side-menu.show {
   left: 0;
 }
 
-#menu-close-button{
+#menu-close-button {
   text-transform: none;
   background-color: var(--taupe-gray);
   color: var(--platinum);
@@ -206,12 +233,12 @@ header{
   margin-left: 5px;
 }
 
-.fa.fa-angle-left{
+.fa.fa-angle-left {
   font-weight: bolder;
   font-size: 15px;
 }
 
-.side-menu-icons-container{
+.side-menu-icons-container {
   display: none;
   font-size: 20px;
   margin: 0;
@@ -222,19 +249,19 @@ header{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.side-menu-icons-container p{
+.side-menu-icons-container p {
   font-size: 13px;
   color: #fff;
 }
 
-.side-menu-icons-container .container{
+.side-menu-icons-container .container {
   display: inline-block;
   flex-direction: column;
   cursor: pointer;
   width: 45%;
 }
 
-#community-button{
+#community-button {
   color: var(--platinum);
   width: 90%;
   margin-left: 5px;
@@ -243,26 +270,26 @@ header{
   margin-top: 10px;
 }
 
-.side-menu .btn i{
+.side-menu .btn i {
   padding-right: 5px;
 }
 
-.links p{
+.links p {
   color: #fff;
   padding: 10px;
   margin-top: 10px;
   font-size: 14px;
   cursor: pointer;
-  border-bottom: .5px solid #444;
+  border-bottom: 0.5px solid #444;
   padding-top: 10px;
   padding-left: 10px;
 }
 
-.links p:hover{
+.links p:hover {
   color: var(--golden-rod);
 }
 
-.genre-section{
+.genre-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -270,21 +297,21 @@ header{
   margin-left: 10px;
 }
 
-.genre-section h1{
+.genre-section h1 {
   color: #fff;
   margin-top: 10px;
   margin-left: 0;
   text-transform: none;
   font-weight: bold;
   text-align: center;
-} 
+}
 
-.genre-column{
+.genre-column {
   width: 45%;
   margin-bottom: 20px;
 }
 
-.genre-section p{
+.genre-section p {
   padding-top: 15px;
   padding-right: 50px;
   cursor: pointer;
@@ -293,68 +320,87 @@ header{
   font-size: 10px;
 }
 
-#action{
+#action {
   color: red;
 }
-#adventure{
+
+#adventure {
   color: purple;
 }
-#martial-arts{
+
+#martial-arts {
   color: green;
 }
-#comedy{
+
+#comedy {
   color: yellow;
 }
-#suspense{
+
+#suspense {
   color: navy;
 }
-#demons{
+
+#demons {
   color: black;
 }
-#drama{
+
+#drama {
   color: aqua;
 }
-#ecchi{
+
+#ecchi {
   color: pink;
 }
-#fantasy{
+
+#fantasy {
   color: brown;
 }
-#horror{
+
+#horror {
   color: chocolate;
 }
-#mecha{
+
+#mecha {
   color: chartreuse;
 }
-#slice-of-life{
+
+#slice-of-life {
   color: darkgray;
 }
-#isekai{
+
+#isekai {
   color: darkgoldenrod;
 }
-#idol{
+
+#idol {
   color: deeppink;
 }
-#psychological{
+
+#psychological {
   color: darkolivegreen;
 }
-#romance{
+
+#romance {
   color: darkorange;
 }
-#sci-fi{
+
+#sci-fi {
   color: darkmagenta;
 }
-#supernatural{
+
+#supernatural {
   color: darkkhaki;
 }
-#mystery{
+
+#mystery {
   color: darkseagreen;
 }
-#magic{
+
+#magic {
   color: deepskyblue;
 }
 
-#search-icon{
+#search-icon {
   display: none;
   position: absolute;
   right: 90px;
@@ -362,18 +408,18 @@ header{
   font-weight: bolder;
 }
 
-header .logo{
+header .logo {
   color: #fff;
   font-size: 2.5rem;
   font-weight: bolder;
 }
 
-header .logo i{
+header .logo i {
   color: var(--golden-rod);
   font-size: 35px;
 }
 
-.search-container{
+.search-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -381,7 +427,7 @@ header .logo i{
   max-width: 450px;
 }
 
-header input{
+header input {
   flex: 1;
   margin-left: 25px;
   margin-right: 10px;
@@ -392,14 +438,14 @@ header input{
   border: 1px solid #ccc;
 }
 
-.search-addon{
+.search-addon {
   position: absolute;
   display: flex;
   align-items: center;
   right: 15px;
 }
 
-.filter-btn{
+.filter-btn {
   background-color: var(--taupe-gray);
   color: var(--platinum);
   padding: 5px 5px;
@@ -408,14 +454,14 @@ header input{
   font-weight: bolder;
 }
 
-.search-container .fa.fa-search{
+.search-container .fa.fa-search {
   color: var(--black);
   cursor: pointer;
   padding-right: 10px;
   font-size: 15px;
 }
 
-.social-media-text p{
+.social-media-text p {
   color: var(--platinum);
   font-size: 12px;
   text-transform: none;
@@ -429,7 +475,7 @@ header input{
   color: #fff;
 } */
 
-header .icons a{
+header .icons a {
   cursor: pointer;
   height: 4.5rem;
   line-height: 4.5rem;
@@ -440,7 +486,7 @@ header .icons a{
   border-radius: 50%;
 }
 
-header .icons i{
+header .icons i {
   color: #fff;
   font-size: 25px;
   cursor: pointer;
@@ -451,16 +497,16 @@ header .icons i{
 }
 
 header .navbar a.active,
-header .navbar a:hover{
+header .navbar a:hover {
   color: #fff;
   background: var(--golden-rod);
 }
 
-header .navbar a.active{
+header .navbar a.active {
   font-weight: bold;
 }
 
-header .icons-container{
+header .icons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -469,27 +515,23 @@ header .icons-container{
   cursor: pointer;
 }
 
-header .icons-container p{
+header .icons-container p {
   color: #fff;
   font-size: 12px;
   margin-top: 5px;
 }
 
-header .icon-text{
+header .icon-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-header .icons-container i{
+header .icons-container i {
   color: var(--golden-rod);
   font-size: 20px;
 }
-
-
-
-
 
 /* header .icons i:hover,
 header .icons a:hover{
@@ -500,17 +542,18 @@ header .icons a:hover{
   transform: rotate(360deg);
 } */
 
-#account-mobile{
-    display: none;
+#account-mobile {
+  display: none;
 }
 
-#account-mobile{
+#account-mobile {
   cursor: pointer;
 }
+
 /* HEADER::END*/
 
 /* LOGIN::START */
-#login-overlay{
+#login-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -521,11 +564,11 @@ header .icons a:hover{
   z-index: 10000;
 }
 
-#login-overlay.active{
+#login-overlay.active {
   display: block;
 }
 
-.login-window{
+.login-window {
   z-index: 100000;
   display: flex;
   position: fixed;
@@ -541,55 +584,57 @@ header .icons a:hover{
   height: 400px;
 }
 
-.login-content{
+.login-content {
   text-align: left;
   color: #fff;
 }
 
-#lb-email, #lb-password{
+#lb-email,
+#lb-password {
   text-transform: uppercase;
 }
 
-#email, #password{
+#email,
+#password {
   margin-top: 10px;
 }
 
-.login-content h2{
+.login-content h2 {
   font-size: 20px;
   text-align: center;
   margin-top: 0;
   height: 70px;
 }
 
-.login-content input{
+.login-content input {
   width: 300px;
   padding: 5px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
-.login-content #remember-checkbox{
+.login-content #remember-checkbox {
   width: 9%;
   padding: 0;
 }
 
-.login-content #forgot-password{
+.login-content #forgot-password {
   position: relative;
   text-align: right;
   left: 35%;
   cursor: pointer;
 }
 
-.login-content #forgot-password:hover{
+.login-content #forgot-password:hover {
   color: var(--golden-rod);
 }
 
-.login-content #login-submit-button{
+.login-content #login-submit-button {
   margin-top: 10px;
   cursor: pointer;
 }
 
-#login-close-button{
+#login-close-button {
   position: absolute;
   top: -1%;
   left: 96%;
@@ -598,21 +643,22 @@ header .icons a:hover{
   cursor: pointer;
 }
 
-#login-close-button:hover{
+#login-close-button:hover {
   color: var(--golden-rod);
 }
 
-#register-button{
+#register-button {
   cursor: pointer;
 }
 
-#register-button:hover{
+#register-button:hover {
   color: var(--golden-rod);
 }
+
 /* LOGIN::END */
 
 /* HOME::START */
-.image-container{
+.image-container {
   flex: 1;
   width: 60%;
   height: auto;
@@ -622,37 +668,37 @@ header .icons a:hover{
   background-color: var(--light-color);
 }
 
-.home #aot-slide{
+.home #aot-slide {
   background: url(imgs/shingeki-no-kyojin.jpg);
   background-position: right top !important;
   background-repeat: no-repeat !important;
 }
 
-.home #fma-slide{
+.home #fma-slide {
   background: url(imgs/fma-brotherhood.jpg);
 }
 
-.home #death-note-slide{
+.home #death-note-slide {
   background: url(imgs/death-note.jpg);
   background-position: bottom right !important;
   background-repeat: no-repeat !important;
 }
 
-.home #opm-slide{
+.home #opm-slide {
   background: url(imgs/opm.jpg);
   background-position: center top !important;
   background-repeat: no-repeat !important;
 }
 
-.home{
+.home {
   padding: 0;
 }
 
-.home .swiper-slide{
+.home .swiper-slide {
   display: flex;
 }
 
-.home .box{
+.home .box {
   min-height: 600px;
   min-width: auto;
   display: flex;
@@ -663,70 +709,74 @@ header .icons a:hover{
   margin-bottom: 0;
 }
 
-.home .box .content{
+.home .box .content {
   width: 400px;
   margin-bottom: 70px;
 }
 
-.home .box.second .content{
+.home .box.second .content {
   margin-bottom: 200px;
 }
 
-.home .box .content h1{
+.home .box .content h1 {
   color: var(--golden-rod);
 }
 
-.home .box .content h3{
+.home .box .content h3 {
   font-size: 4rem;
   color: #fff;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
-.home .box .content p{
+.home .box .content p {
   line-height: 2;
   color: #fff;
-  font-size: 1.rem;
+  font-size: 1rem;
   padding: 1rem 0;
 }
 
-.home .box .content{
+.home .box .content {
   position: absolute;
   color: #fff;
   left: 20px;
 }
 
-.home .swiper-slide::before{
+.home .swiper-slide::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, rgb(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right,
+      rgb(0, 0, 0, 0.8) 40%,
+      rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
 }
 
-.home .image-container::after{
+.home .image-container::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 25%;
-  background: linear-gradient(to top, rgb(24, 24, 24) 60%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top,
+      rgb(24, 24, 24) 60%,
+      rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
 }
 
-.home .swiper-slide i{
+.home .swiper-slide i {
   padding-right: 1rem;
 }
 
-.swiper.home-slider{
+.swiper.home-slider {
   position: relative !important;
   background-color: var(--light-color);
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: absolute;
   top: 40% !important;
   right: 20px;
@@ -735,7 +785,7 @@ header .icons a:hover{
   align-items: flex-end;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 8px !important;
   height: 8px !important;
   border-radius: 50% !important;
@@ -743,41 +793,41 @@ header .icons a:hover{
   color: #fff;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--golden-rod);
 }
+
 /* HOME::END */
 
-
 /* SHARE-GIF::START */
-.share-section{
+.share-section {
   margin-bottom: 50px;
 }
 
-.inline-elements{
+.inline-elements {
   display: flex;
   align-items: center;
 }
 
-#share-img{
-  width: 70px;  
+#share-img {
+  width: 70px;
   height: 60px;
   pointer-events: none;
   margin: 0 0 0 30px;
 }
 
-.share-section h1{
+.share-section h1 {
   color: var(--golden-rod);
   font-size: 14px;
   font-weight: bold;
 }
 
-.share-section p{
+.share-section p {
   color: #fff;
   font-size: 12px;
 }
 
-.text-content{
+.text-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -787,36 +837,37 @@ header .icons a:hover{
   margin-top: 10px;
 }
 
-.text-content h1{
+.text-content h1 {
   margin: 0;
 }
 
-.text-content p{
+.text-content p {
   margin: 0;
 }
+
 /* SHARE-GIF::END */
 
 /* ANIME-BOXES-SECTION::START */
-#most-popular{
+#most-popular {
   margin-top: 0;
   width: 90%;
 }
 
-#most-popular .heading{
+#most-popular .heading {
   padding-left: 15px;
 }
 
-.swiper.trending-slider{
+.swiper.trending-slider {
   margin-left: 20px;
 }
 
-.anime-box .content h3{
+.anime-box .content h3 {
   color: #fff;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
 
-.anime-box .box{
+.anime-box .box {
   width: 228px;
   height: 308px;
   background-size: cover !important;
@@ -825,7 +876,7 @@ header .icons a:hover{
   box-sizing: border-box;
 }
 
-.anime-box .swiper-slide{
+.anime-box .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -837,7 +888,7 @@ header .icons a:hover{
   padding-top: 0;
 }
 
-.swiper-navigation-popular{
+.swiper-navigation-popular {
   position: absolute;
   transform: translateX(-50%);
   right: 50px;
@@ -845,7 +896,8 @@ header .icons a:hover{
   align-items: center;
 }
 
-#popular-button-prev, #popular-button-next{
+#popular-button-prev,
+#popular-button-next {
   color: var(--platinum);
   background-color: var(--rich-black);
   width: 50px;
@@ -858,41 +910,42 @@ header .icons a:hover{
   top: 20px;
 }
 
-#popular-button-prev{
+#popular-button-prev {
   top: 190px;
   left: -60px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 10px; 
+  font-size: 10px;
 }
+
 /* ANIME-BOXES-SECTION::END */
 
 /* MAIN-CATEGORIES::START */
-.main-categories{
+.main-categories {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
- 
-.category{
+
+.category {
   margin: 0 25px 0 0;
   width: 23%;
   flex-grow: 1;
 }
 
-.category h1{
+.category h1 {
   color: var(--golden-rod);
   font-weight: bolder;
 }
 
-.show-image-container{
+.show-image-container {
   position: relative;
   overflow: hidden;
 }
 
-.category img{
+.category img {
   width: 60px;
   height: 76px;
   border-radius: 20%;
@@ -901,7 +954,7 @@ header .icons a:hover{
   transition: filter 0.3s ease;
 }
 
-.show-image-overlay{
+.show-image-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -915,17 +968,17 @@ header .icons a:hover{
   margin-bottom: 20px;
 }
 
-.show-image-container:hover img{
+.show-image-container:hover img {
   filter: blur(5px);
   cursor: pointer;
 }
 
-.show-image-container:hover .show-image-overlay{
+.show-image-container:hover .show-image-overlay {
   opacity: 1;
   cursor: pointer;
 }
 
-.category .show{
+.category .show {
   color: #fff;
   padding: 35px 0 0 0;
   border-bottom: 1px solid #333;
@@ -934,14 +987,15 @@ header .icons a:hover{
   margin-bottom: 20px;
 }
 
-.category .show .text-info{
+.category .show .text-info {
   text-align: left;
   font-size: 15px;
   margin-left: 20px;
   max-width: 200px;
 }
 
-#show-info-1, #show-info-2{
+#show-info-1,
+#show-info-2 {
   font-size: 11px;
   display: inline-block;
   border-radius: 10%;
@@ -951,42 +1005,42 @@ header .icons a:hover{
   text-align: center;
 }
 
-#show-info-2{
+#show-info-2 {
   background-color: var(--coffee);
   color: #fff;
   display: inline;
   padding: 0 5px 0 5px;
 }
 
-#movies #show-info-2{
+#movies #show-info-2 {
   width: 60px;
 }
 
-#tv-series{
+#tv-series {
   margin-left: 30px;
 }
 
-.show .text-info p:first-child{
+.show .text-info p:first-child {
   max-width: 220px;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
 
-.show .text-info p:first-child:hover{
+.show .text-info p:first-child:hover {
   cursor: pointer;
   color: var(--golden-rod);
 }
 
-.show-additional{
+.show-additional {
   display: none;
 }
 
-.show-additional.hidden{
+.show-additional.hidden {
   display: block;
 }
 
-.view-more{
+.view-more {
   margin: 10px 0 20px 0;
   background-color: var(--light-color);
   border-bottom: 1px solid #ccc;
@@ -994,6 +1048,7 @@ header .icons a:hover{
   cursor: pointer;
   font-weight: bolder;
 }
+
 /* MAIN-CATEGORIES::END*/
 
 /* SCROLL-TO-TOP-ARROW::START */
@@ -1018,232 +1073,238 @@ header .icons a:hover{
 #scrollToTop:hover {
   opacity: 1;
 }
+
 /* SCROLL-TO-TOP-ARROW::END */
 
 /* Configuring the page for different resolutions */
-@media(max-width: 1924px){
+@media (max-width: 1924px) {
   /* #completed{
     margin-left: 40px;
   } */
 }
 
-@media(max-width: 1624px){
-  .category{
+@media (max-width: 1624px) {
+  .category {
     width: 20%;
-
   }
 }
 
-@media(max-width: 1500px){
-  .home #fma-slide{
+@media (max-width: 1500px) {
+  .home #fma-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
-  
-  .anime-box .box{
+
+  .anime-box .box {
     width: 200px;
   }
 }
 
-@media(max-width: 1300px){
-  .search-container{
+@media (max-width: 1300px) {
+  .search-container {
     display: none;
   }
 
-  #search-icon{
+  #search-icon {
     display: block;
   }
 }
 
-@media(max-width: 1252px){
-  .category{
+@media (max-width: 1252px) {
+  .category {
     width: 35%;
   }
 
-  #top-airing{
-  margin-left: 30px;
-}
+  #top-airing {
+    margin-left: 30px;
+  }
 }
 
-@media(max-width: 1200px){
-  .social-media-text{
+@media (max-width: 1200px) {
+  .social-media-text {
     display: none;
   }
 
-  #social-media-icons{
+  #social-media-icons {
     margin: 0;
     padding: 0 0 0 20px;
   }
 
-  .icons-container{
+  .icons-container {
     margin: 0;
     padding: 0;
   }
 
-  header{
+  header {
     padding: 5px 0 0 0;
     margin: 0;
   }
 
-  header #menu-bars{
+  header #menu-bars {
     margin: 0 5px 0 15px;
   }
 
-  #c1,#c2,#c3{
+  #c1,
+  #c2,
+  #c3 {
     display: none;
   }
 
-  .side-menu-icons-container{
+  .side-menu-icons-container {
     display: block;
   }
 
-  #menu-close-button{
+  #menu-close-button {
     margin-bottom: 10px;
   }
 }
 
-@media(max-width: 991px){
-    html{
+@media (max-width: 991px) {
+  html {
     font-size: 55%;
-}   
-  .login-content #forgot-password{
+  }
+
+  .login-content #forgot-password {
     left: 42%;
   }
 
-  .anime-box .box{
+  .anime-box .box {
     width: 168px;
     height: 220px;
   }
 
-  .anime-box .swiper-slide{
+  .anime-box .swiper-slide {
     padding: 0;
   }
 
   #discord-icon,
   #telegram-icon,
   #reddit-icon,
-  #twitter-icon{
+  #twitter-icon {
     display: none;
   }
 
-  #search-icon{
+  #search-icon {
     top: 0px;
   }
 
-  .icons-container i{
+  .icons-container i {
     font-size: 15px !important;
   }
 
-  .icons-container p{
+  .icons-container p {
     font-size: 12px !important;
   }
 
-  #c1,#c2,#c3{
+  #c1,
+  #c2,
+  #c3 {
     margin: 0;
     padding: 0 5px;
   }
 
-  .logo{
+  .logo {
     margin: 0;
     padding: 0;
   }
 
-  #popular-button-prev, #popular-button-next{
+  #popular-button-prev,
+  #popular-button-next {
     width: 50px;
     height: 110px;
     top: 20px;
   }
 
-  #popular-button-prev{
+  #popular-button-prev {
     top: 140px;
     left: -60px;
   }
 
-  #share-img{
+  #share-img {
     margin: 40px 0 0 30px;
   }
 
-  .text-content{
+  .text-content {
     margin-top: 50px;
   }
 }
 
-@media(max-width: 961px){
-  .show .text-info p:first-child{
+@media (max-width: 961px) {
+  .show .text-info p:first-child {
     font-size: 15px;
     word-wrap: break-word;
     max-width: 220px;
   }
 }
 
-@media(max-width: 850px){
-  .swiper-navigation-popular{
+@media (max-width: 850px) {
+  .swiper-navigation-popular {
     display: none;
   }
 
-  .anime-box .swiper-navigation{
+  .anime-box .swiper-navigation {
     display: none;
   }
 
-  .anime-box .swiper-slide{
+  .anime-box .swiper-slide {
     width: 20px;
   }
 
-  .swiper-navigation-popular{
+  .swiper-navigation-popular {
     right: 10px;
   }
 }
 
-@media(max-width: 768px){
-    .home .box{
-  min-height: 400px;
+@media (max-width: 768px) {
+  .home .box {
+    min-height: 400px;
   }
 
-  .home .box .content{
+  .home .box .content {
     top: 90px;
   }
 
-  .home .box.second{
+  .home .box.second {
     margin-bottom: 0;
     top: 40px;
   }
 
-  .home .content p{
+  .home .content p {
     display: none;
-  } 
+  }
 
-  .home .box .content{
+  .home .box .content {
     margin-bottom: 0px;
   }
 
-  .home #aot-slide{
+  .home #aot-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
 
-  .home #opm-slide{
+  .home #opm-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
 
-  .home #fma-slide{
+  .home #fma-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
 
-  .home #death-note-slide{
+  .home #death-note-slide {
     background-position: right center !important;
   }
 
-  #account-mobile{
+  #account-mobile {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
@@ -1255,105 +1316,106 @@ header .icons a:hover{
     width: 97%;
   }
 
-  .login-content #forgot-password{
+  .login-content #forgot-password {
     left: 43%;
   }
 
-  #movies, #completed{
+  #movies,
+  #completed {
     margin-left: 30px;
   }
 
-  .category{
+  .category {
     width: 50%;
   }
 }
 
-@media(max-width: 480px){
-  html{
+@media (max-width: 480px) {
+  html {
     font-size: 50%;
   }
-  
-  .home .content h3{
+
+  .home .content h3 {
     font-size: 2rem;
   }
 
-  .home .box{
+  .home .box {
     min-height: 400px;
     top: 90px;
   }
 
-  .home .box .content{
+  .home .box .content {
     margin-bottom: 90px;
   }
 
-  .home .box.second .content{
+  .home .box.second .content {
     margin-bottom: 140px;
-  } 
+  }
 
-  .home #fma-slide{
+  .home #fma-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
 
-  .home #opm-slide{
+  .home #opm-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
 
-  .home #aot-slide{
+  .home #aot-slide {
     background-position: center center !important;
     background-size: cover !important;
     background-repeat: no-repeat;
     flex: 1;
   }
 
-  .home .swiper-slide p{
+  .home .swiper-slide p {
     display: none;
   }
 
-  .home .swiper-slide h3{
+  .home .swiper-slide h3 {
     font-size: 16px;
   }
 
-  .login-content #forgot-password{
+  .login-content #forgot-password {
     left: 46%;
   }
 
-  .anime-box .swiper-slide{
+  .anime-box .swiper-slide {
     padding: 0 9rem;
   }
 
-  .genre-section p{
+  .genre-section p {
     font-size: 10px;
   }
 
-  #login-button{
+  #login-button {
     font-size: 10px;
   }
 
-  #search-icon{
+  #search-icon {
     font-size: 15px;
     top: 5px;
     right: 80px;
   }
 
-  #share-img{
+  #share-img {
     margin: 20px 0 0 30px;
   }
 
-  .text-content{
+  .text-content {
     margin-top: 40px;
   }
 
-  .share-section h1{
-  font-size: 12px;
+  .share-section h1 {
+    font-size: 12px;
   }
 
-  .share-section p{
-  font-size: 10px;
+  .share-section p {
+    font-size: 10px;
   }
-  }
+}
