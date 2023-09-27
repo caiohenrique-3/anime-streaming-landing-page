@@ -54,24 +54,20 @@ const menuOverlay = document.getElementById("menu-overlay");
 const menuBars = document.getElementById("menu-bars");
 const sideMenu = document.getElementById("side-menu");
 const menuCloseButton = document.getElementById("menu-close-button");
+const htmlElement = document.querySelector('html');
 
 menuBars.addEventListener("click", function() {
-  document.body.style.overflow = (document.body.style.overflow === "hidden")
-    ? "auto"
-    : "hidden";
+  // Disable scrolling outside the side menu 
+  htmlElement.style.overflowY = "hidden";
+
   sideMenu.classList.add("show");
   menuOverlay.style.display = "block";
-});
-
-// When the side menu is open, prevents scrolling the main page.
-sideMenu.addEventListener("scroll", function() {
-  e.preventDefault();
-  sideMenu.scrollTop += e.deltaY;
 });
 
 menuOverlay.addEventListener("click", function() {
   sideMenu.classList.remove("show");
   sideMenu.classList.toggle("menu-active");
+  htmlElement.style.overflowY = "auto";
   menuOverlay.style.display = "none";
 });
 
@@ -79,6 +75,7 @@ menuCloseButton.addEventListener("click", function() {
   sideMenu.classList.remove("show");
   sideMenu.classList.toggle("menu-active");
   menuOverlay.style.display = "none";
+  htmlElement.style.overflowY = "auto";
 });
 
 // Makes the header blur the background if the page is scrolled down.
