@@ -1,5 +1,3 @@
-// todo: make the header sticky only in higher resolutions
-
 // LOGIN-WINDOW::START
 const loginButton = document.getElementById("login-button");
 const loginWindow = document.getElementById("login-window");
@@ -79,10 +77,11 @@ menuCloseButton.addEventListener("click", function() {
 });
 
 // Makes the header blur the background if the page is scrolled down.
+// Only in screens with witdh greater than 1300px.
 const header = document.getElementById("main-header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 0 && window.innerWidth > 1300) {
     header.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     header.style.backdropFilter = "blur(10px)";
   } else {
